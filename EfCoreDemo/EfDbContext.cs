@@ -14,8 +14,8 @@ namespace EfCoreDemo
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=SWAGAT-MIBOOK;Database=MyAwesomeEfcoreDb;User Id=sa;password=mindfire;Trusted_Connection=False;MultipleActiveResultSets=true;");
-            optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
-            optionsBuilder.EnableSensitiveDataLogging();
+            //optionsBuilder.LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information);
+            //optionsBuilder.EnableSensitiveDataLogging();
             base.OnConfiguring(optionsBuilder);
         }
     }
